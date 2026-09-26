@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: fserver-worker-001.mapleridgeway.top
-  port: 443
-  uuid: 83b4af70-376e-427c-8c11-a025bec6b085
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fserver-worker-001.mapleridgeway.top
   network: ws
   ws-opts:
-    path: /cdn/99294c014f2c7791?ed=2056
+    path: /
     headers:
-      Host: fserver-worker-001.mapleridgeway.top
+      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
